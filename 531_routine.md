@@ -1,5 +1,8 @@
-# kakaocorp/kanana-nano-2.1b-instruct sLLM 모델 + 생성 데이터 Fine-Tuning 거친 후 
-# 최종 생성된 5/3/1 routine 결과입니다.
+# 5/3/1 웨이트 트레이닝 루틴 생성 결과
+
+**모델**: `kakaocorp/kanana-nano-2.1b-instruct`  
+**학습 방식**: 생성 데이터 기반 Fine-Tuning 적용 (`sLLM` 기반)  
+**출력 내용**: 아래는 Fine-Tuning을 거쳐 최종 생성된 **5/3/1 루틴**입니다.
 
 ### 1번째 사용자 정보
 
