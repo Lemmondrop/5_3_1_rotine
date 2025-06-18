@@ -160,12 +160,29 @@ def postprocess(text: str, one_rm: dict, week: int) -> str:
 
 # [5] 루틴 생성 함수
 def generate_routine():
+    print("✅ 사용자 정보를 입력하세요.\n")
+
+    experience = input("운동 경험 (예: 초급자 / 중급자 / 고급자): ")
+    goal = input("운동 목표 (예: 근력 증가 / 유지 / 다이어트): ")
+
+    squat = float(input("스쿼트 1RM (kg): "))
+    bench = float(input("벤치프레스 1RM (kg): "))
+    deadlift = float(input("데드리프트 1RM (kg): "))
+    overhead = float(input("오버헤드 프레스 1RM (kg): "))
+
     user_info = (
-        "운동 경험: 고급자\n"
-        "운동 목표: 근력 유지\n"
-        "1RM 정보: 스쿼트 180kg, 벤치프레스 120kg, 데드리프트 200kg, 오버헤드 프레스 80kg"
+        f"운동 경험: {experience}\n"
+        f"운동 목표: {goal}\n"
+        f"1RM 정보: 스쿼트 {squat}kg, 벤치프레스 {bench}kg, "
+        f"데드리프트 {deadlift}kg, 오버헤드 프레스 {overhead}kg"
     )
 
+    one_rm = {
+        "스쿼트": squat,
+        "벤치프레스": bench,
+        "데드리프트": deadlift,
+        "오버헤드 프레스": overhead,
+    }
     one_rm = extract_one_rm(user_info)
 
     all_weeks = []
