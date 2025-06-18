@@ -32,6 +32,9 @@
 
 ### 계산 방식
 
+세트 구성 참조:  
+https://www.monandol.kr/29/?bmode=view&idx=25307181
+
 - 훈련 1RM = 실제 1RM × 0.9  
 - 세트 구성 예시:
   - 1주차: 65% × 5회, 75% × 5회, 85% × 5회 이상 (AMRAP)
@@ -113,7 +116,18 @@
 python inference.py
 ```
 
-- `inference.py` 내부에 사용자 정보(`user_info`)가 내장되어 있음
+- `inference.py` 실행 시 `사용자의 정보{user_info}`입력받음
+[입력예시]
+```bash
+✅ 사용자 정보를 입력하세요.
+
+운동 경험 (예: 초급자 / 중급자 / 고급자): 초급자
+운동 목표 (예: 근력 증가 / 유지 / 다이어트): 근력 증가
+스쿼트 1RM (kg): 60
+벤치프레스 1RM (kg): 40
+데드리프트 1RM (kg): 40
+오버헤드 프레스 1RM (kg): 20
+```
 
 ## 모델 파일 또는 접근 경로
 results_kanana_v2/checkpoint-1250
